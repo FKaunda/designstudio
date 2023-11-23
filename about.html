@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>About</title>
+ <link rel="stylesheet" href="./alex.css">
+
+</head>
+
+<body>
+ <div class="container">
+  <div class="header-bar"></div>
+  <div class="header">
+    <ul class="nav">
+      <li class="logo-h1"> <a href="./alex.html">Alexandria <span class="logo-h2">Collective</span></a></li>
+      <li><a href="./about.html" >ABOUT</a></li>
+      <li><a href="./event.html" >EVENT STYLING</a></li>
+      <li><a href="./interior.html" >INTERIOR STYLING</a></li>
+  <!-- <li><a href="./contact.html" >CONTACT</a></li>-->
+      <li> <a href="./inquire.html" class="inquiry-btn">INQUIRE</a></li>
+    </ul>
+    </div>
+    <div class="line"></div>
+  <div class="about-hero">
+  <img src="./IMAGES/about img 1.jpg">
+  <img src="./IMAGES/about img2.jpg">
+  <div class="about-text">
+   <h2>About Alexandria Collective</h2>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis porro repudiandae voluptas rem dolor praesentium
+    laboriosam saepe quod ut. Voluptas id expedita blanditiis soluta optio esse officiis fuga alias recusandae! Quae
+    tempora id molestias ducimus, rerum sint illum non minus nihil. Est modi, consequuntur incidunt dolores quas veritatis
+    at! Saepe?</p>
+  </div>
+  </div>
+  <button class="about-btn">LET'S TALK</button>
+  <br>
+  <div class="aboutfull_img">
+    <img src="./IMAGES/about full img.jpg">
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-img"><img src="./IMAGES/footer img.jpg"></div>
+      <form class="form">
+        <h3>STAY IN THE LOOP</h3>
+        <P>Join our newsletter gang and be the first to know about exclusive offers</P>
+        <label><input type="text" id="newsletterName" name="name" required></label>
+        <br>
+        <br>
+        <label><input type="email" id="newsletterEmail" name="email" required></label>
+        <br>
+        <br>
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+      </form>
+      
+      
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      
+      </div>
+      <p>&copy;Alexandriacollective</p>
+      </div>
+      </div>
+      <script>
+        function subscribeNewsletter() {
+          let newsletterName = document.getElementById('newsletterName').value;
+          let newsletterEmail = document.getElementById('newsletterEmail').value;
+
+          // Your code to subscribe the user to the newsletter
+          // ...
+          if (newsletterName.trim() === '' || newsletterEmail.trim() === '') {
+            alert('Please provide both name and email.');
+            return fasle;
+          }
+          alert('You are subscribed!');
+
+          // Example alert
+        }
+      </script>
+  </body>
+
+</html>

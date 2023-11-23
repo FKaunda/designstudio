@@ -1,0 +1,416 @@
+body{
+ margin: 0;
+ border: 0;
+ padding: 0;
+ font-family: 'Times New Roman', Times, serif;
+min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header-bar{
+  border: 10px solid #c49e85;
+ 
+}
+.header{
+ width: 100%;
+}
+.nav{
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+ align-items: center;
+text-decoration: none;
+}
+.logo-h1{
+ font-size: 30px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight: bolder;
+}
+.logo-h2{
+ font-size: 18px;
+}
+.nav li{
+list-style-type: none;
+font-style: italic;
+}
+.nav li a{
+  text-decoration: none;
+  color: black;
+}
+.container{
+ margin: 10px;
+}
+.inquiry-btn{
+ background-color: #c49e85;
+ padding: 10px;
+ color: white;
+}
+.line{
+ border: 1px solid grey;
+ width: 100%;
+}
+
+.images{
+ position: relative;
+ margin-top: 20px;
+}
+.images img{
+ width:400px;
+ height: 600px;
+}
+.images img.img2{
+float: right;
+}
+.hero{
+ position: relative;
+}
+.hero-text{
+ position: absolute;
+ z-index: 100px;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background: (255, 255, 255, 0.7);
+     
+}
+.hero-text h3,
+h2 {
+ font-weight: 200;
+ text-align: center;
+}
+
+.hero-text h2 {
+ font-size: 30px;
+ text-shadow:1px 1px black;
+}
+.hero-text button {
+ background-color: #c49e85;
+ font-size: 12px;
+ padding: 15px;
+ color: white;
+ border: none;
+}
+.hero-text button a{
+  text-decoration: none;
+  color: white;
+}
+.whoweare-col{
+margin-top: 50px;
+display: flex;
+flex:50%;
+background: #c49e85;
+height: 100vh;
+}
+.whoweare-col-text{
+ width:50%;
+height: 100vh;
+text-align: center;
+margin-top: 10%;
+color: white;
+}
+.whoweare-col-text button{
+background: transparent;
+padding: 10px;
+color: black;
+background-color: white;
+border: 1px solid white;
+border-radius: 10px;
+}
+.whoweare-col img{
+width:50%;
+}
+.interior{
+  margin: 20px;
+display: flex;
+gap: 20px;
+background-color: #f8f4f9;
+}
+.column{
+flex:1;
+border: 1px solid black;
+padding: 20px;
+margin: 20px;
+text-align: center;
+background-color: white;
+}
+.column button{
+  padding: 10px;
+  background: #c49e85;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.column button a{
+  text-decoration: none;
+  color:white;
+}
+.last-col{
+display: flex;
+}
+.last-col img{
+width: 300px;
+height: auto;
+}
+.last-col-col{
+ margin: 20px;
+text-align: center;
+}
+.last-col-col button{
+padding:10px;
+background: #c49e85;
+border: 0.5px solid black;
+border-radius: 10px;
+}
+.last-col-col button a{
+  text-decoration: none;
+  color: white;
+}
+.footer{
+  background: #c49e85;
+border: 10px solid #c49e85;
+margin-top: 30px;
+/*margin-top: auto;*/
+position: relative;
+
+}
+.footer-img{
+  flex: 1;
+  
+}
+.footer-img img{
+  max-width: 300px;
+  /*float: left;*/
+  
+}
+.footer-container{
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+}
+.form{
+  flex:1;
+  text-align: left;
+  margin-right: 20px;
+}
+.form button{
+ padding: 5px;
+ border-radius: 5px;
+ border: none;
+background-color: white;
+ color:#c49e85;
+ font-weight: bolder;
+}
+input{
+  width: 300px;
+  height: 40px;
+}
+.about-hero{
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  width: 100%;
+overflow: hidden;
+position: relative;
+}
+.about-hero img{
+  max-width: 50%;
+  height: auto;
+}
+.about-text{
+  border: 1px solid black;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+    align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+max-width: 80%;
+background: rgba(255, 255, 255, 0.618);
+
+}
+.about-btn{
+position: absolute;
+  margin: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#c49e85;
+  padding: 5px 10px;
+  border: none;
+}
+
+.event-hero{
+  margin-top: 40px;
+}
+.event-hero{
+  display: flex;
+  position: relative;
+  margin-top: 10%;
+}
+.event-text{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  padding: 20px;
+ max-width: 80%;
+  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.three-col{
+  display: flex;
+  margin-top: 10%;
+  text-align: center;
+}
+.col-img{
+flex: 1;
+margin: 10px;
+}
+.col-img img{
+ max-width: 200px;
+  height: 300px;
+}
+.col_btn button{
+  background-color: #c49e85;
+transform: translateX(700%);
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.three-col button {
+  background-color: #c49e85;
+  font-size: 12px;
+  padding: 15px;
+  color: red;
+  border: none;
+}
+.contact-col {
+  display: flex;
+  border: 1px solid black;
+}
+
+.contact-col img {
+  width: 300px;
+  height: auto;
+}
+
+.contact-col-col {
+  margin: 20px;
+  text-align: center;
+}
+.contact-col-col p{
+  border: 1px solid black;
+  padding: 40px;
+  }
+  .contact-col-col h2{
+    font-size: 30px;
+  }
+.contact-col-col button {
+  padding: 10px;
+  background: #c49e85;
+}
+.input-1{
+  width: 300px;
+}
+.input-2{
+  width:50%;
+}
+.input-btn{
+  padding: 10px;
+  font-size: 15px;
+ text-transform: uppercase;
+ font-weight: bold;
+ background: #c49e85;
+ color: white;
+ border: none;
+ margin-bottom: 10px;
+}
+textarea{
+  width: 50%;
+}
+.aboutfull_img{
+  margin-top: 40px;
+  
+}
+.aboutfull_img img{
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-h1 {
+    font-size: 24px;
+  }
+
+  .logo-h2 {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 5px;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-text button {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .whoweare-col {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .whoweare-col-text
+  .whoweare-col img {
+    width: 100%;
+  }
+  .whoweare-col-img{
+    display: none;
+  }
+  
+  .interior {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 90%;
+    
+  }
+   
+  .last-col img {
+    width: 100%;
+  }
+  .last-col-col img{
+    width: 200px;
+    height: auto;
+  }
+}
+

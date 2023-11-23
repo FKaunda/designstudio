@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lexie Deisgn Studio</title>
+ <link rel="stylesheet" href="./alex.css">
+
+
+</head>
+<body>
+ <div class="container">
+  <div class="header-bar"></div>
+  <div class="header" >
+    
+   <ul class="nav">
+    <li class="logo-h1"> <a href="./alex.html">Alexandria <span class="logo-h2">Collective</span></a></li>
+    <li><a href="./about.html" >ABOUT</a></li>
+    <li><a href="./event.html" >EVENT STYLING</a></li>
+    <li><a href="./interior.html" >INTERIOR STYLING</a></li>
+   <!-- <li><a href="./contact.html" >CONTACT</a></li>-->
+    <li> <a href="./inquire.html" class="inquiry-btn">INQUIRE <i class="fa-solid fa-cart-shopping"></i></a></li>
+   </ul>
+  
+  </div>
+  <div class="line"></div>
+  <div class="body">
+   <div class="hero">
+     <div class="images">
+      <img class="img1" src="./IMAGES/image1.jpg"  alt="">
+     <img class="img2" src="./IMAGES/image2.jpg" alt="">
+     </div>
+     <div class="hero-text">
+      <h3>Real comfort, visual and physical, is vital to every room.</h3>
+      <h2>INTERIOR & EVENT STYLING <br> STUDIO</h2>
+      <button> <a href="./about.html" target="_blank" >Learn More</a> </button>
+     </div>
+   </div> 
+   <div class="whoweare-col"> 
+    <div class="whoweare-col-text"><h2>WHO WE ARE</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste sed voluptates incidunt dolorem sit quisquam deserunt aliquam deleniti nulla illum eum placeat consectetur ad provident corporis rem repellendus, sunt pariatur eligendi veniam odit non mollitia. Dicta eligendi in maxime culpa. Amet nisi voluptatibus ullam nobis illo esse recusandae officia.</P>
+    <button>Learn More</button>
+    </div>
+     <img src="./IMAGES/couch.jpg">
+   </div>
+   <!--interior & event styling-->
+   <div class="interior">
+    <div class="column">
+      <h2>Interior Styling</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique eveniet nostrum doloribus sint saepe quidem maxime corporis, asperiores cumque aut assumenda atque ea! Error, ea veritatis? Quasi veritatis et, deserunt ipsum eius voluptatem omnis ipsa ex iusto quia recusandae! Repudiandae saepe similique commodi minima officiis ad cum deserunt, quam eius.</p>
+      <button> <a href="./interior.html" target="_blank">Dicover your style</a></button>
+      </div>
+      <div class="column">
+      <h2>Event Styling</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique eveniet nostrum doloribus sint saepe quidem
+        maxime corporis, asperiores cumque aut assumenda atque ea! Error, ea veritatis? Quasi veritatis et, deserunt ipsum
+        eius voluptatem omnis ipsa ex iusto quia recusandae! Repudiandae saepe similique commodi minima officiis ad cum
+        deserunt, quam eius.</p>
+        <button> <a href="./event.html" target="_blank">Dicover your style</a></button>
+        </div>
+   </div>
+   <!--last col-->
+   <div class="last-col">
+    <div class="last-col-col"><img src="./IMAGES/woman.jpg" alt="">
+    </div>
+      <div class="last-col-col">
+      <h3>MEET LOGAN</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquam in dolores quasi natus illum numquam hic eveniet quia optio fugit tenetur eum odit culpa aspernatur blanditiis quae eos, rem modi nemo distinctio repellat libero a amet? Dolores, recusandae voluptas quos soluta tenetur nostrum esse quam placeat, veniam aperiam sequi magnam reiciendis? Delectus quam a, sed est ea vero aperiam consectetur eos hic esse porro voluptates ullam. Dolor quasi optio, ratione error, totam velit alias molestias dignissimos provident laboriosam architecto eligendi, modi maxime. Molestias, hic tenetur quaerat aliquam doloremque labore laborum similique nostrum culpa atque repudiandae mollitia placeat ad eaque.</p>
+      <button> <a href="./contact.html" target="_blank" >Contact Us</a></button>
+        </div>
+   </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-img"><img src="./IMAGES/footer img.jpg"></div>
+      <form class="form">
+        <h3>STAY IN THE LOOP</h3>
+        <P>Join our newsletter gang and be the first to know about exclusive offers</P>
+        <label><input type="text" id="newsletterName" name="name" required></label>
+        <br>
+        <br>
+        <label><input type="email" id="newsletterEmail" name="email" required></label>
+        <br>
+        <br>
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+      </form>
+  
+  
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+  
+    </div>
+    <p>&copy;Alexandriacollective</p>
+  </div>
+  </div>
+  <script >
+    function subscribeNewsletter() {
+        let newsletterName = document.getElementById('newsletterName').value;
+        let newsletterEmail = document.getElementById('newsletterEmail').value;
+
+        // Your code to subscribe the user to the newsletter
+        // ...
+        if (newsletterName.trim() === '' || newsletterEmail.trim() === '') {
+          alert('Please provide both name and email.');
+          return fasle;
+        }
+        alert('You are subscribed!');
+
+        // Example alert
+      }
+  </script>
+  </body>
+  
+</html>

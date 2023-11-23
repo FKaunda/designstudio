@@ -1,0 +1,122 @@
+ <!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact</title>
+ <link rel="stylesheet" href="./alex.css">
+
+</head>
+
+<body>
+ <div class="container">
+  <div class="header-bar"></div>
+  <div class="header">
+    <ul class="nav">
+      <li class="logo-h1"> <a href="./alex.html">Alexandria <span class="logo-h2">Collective</span></a></li>
+      <li><a href="./about.html" >ABOUT</a></li>
+      <li><a href="./event.html" >EVENT STYLING</a></li>
+      <li><a href="./interior.html" >INTERIOR STYLING</a></li>
+      <li><a href="./contact.html" >CONTACT</a></li>
+      <li> <a href="./inquire.html" class="inquiry-btn">INQUIRE</a></li>
+    </ul>
+    </div>
+    <div class="line"></div>
+  <div class="contact-col">
+   <div class="contact-col-col"><img src="./IMAGES/woman.jpg" alt="">
+   </div>
+  <div class="contact-col-col">
+   <h2>THE NEXT LEVEL OF YOUR INTERIOR AND EVENT STYLING STARTS HERE</h2>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquam in dolores quasi natus illum numquam
+    hic eveniet quia optio fugit tenetur eum odit culpa aspernatur blanditiis quae eos, rem modi nemo distinctio repellat
+    libero a amet? Dolores, recusandae voluptas quos soluta tenetur nostrum esse quam placeat, veniam aperiam sequi magnam
+    reiciendis? Delectus quam a, sed est ea vero aperiam consectetur eos hic esse porro voluptates ullam. Dolor quasi
+    optio, ratione error, totam velit alias molestias dignissimos provident laboriosam architecto eligendi, modi maxime.
+    Molestias, hic tenetur quaerat aliquam doloremque labore laborum similique nostrum culpa atque repudiandae mollitia
+    placeat ad eaque.</p>
+   <button>Contact Me</button>
+  </div>
+  </div>
+  <div class="contact-form">
+   <h2>CLIENT APPLICATION FORM</h2>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur voluptas odit, maiores ea aut corrupti alias ad. Inventore commodi molestias, beatae nemo expedita soluta fuga consequuntur, quod voluptatem doloribus corrupti minus culpa sapiente explicabo. Quisquam ad reprehenderit recusandae nesciunt dignissimos, pariatur eum veritatis facere, labore iure, consectetur nulla nam fugit?
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia porro consequuntur, quae amet nobis pariatur. Quaerat quidem consequatur, odit, tenetur eius eaque inventore eveniet perspiciatis velit ducimus ea quia ratione dolore consequuntur nobis esse non quam aut sint. Eius error provident omnis, ex odio ipsa adipisci deleniti quis porro.
+   </p>
+   <form onsubmit="sendEmail(); reset(); return false;">
+    <input type="name" class="input-1" id="name" placeholder="First Name" required>
+     <input type="name" class="input-1" id="name" placeholder="Last Name" required>
+      <BR>
+       <BR>
+     <input type="email"class="input-1" id="email" placeholder="Email Address" required>
+     <p>WHICH SERVICE ARE YOU MOST INTERESTED IN?<br>
+      Check all that apply.</p>
+  
+   <input type="checkbox" class="" id="name" name="" value="">
+   <label for="Brand Identity"> Home interior design</label><br>
+   <input type="checkbox" class="" name="" value="">
+   <label for="">Office and cooperate spaces interior design</label>
+   <br>
+    <input type="checkbox" class="" name="" value="">
+    <label for="">Event design</label>
+    <br>
+    <p>WHICH PAYMENT OPTION ARE YOU FEELING MOST ALIGNED WITH? (KEEP IN MIND WE HAVE PAYMENT PLAN OPTIONS)</p>
+    <input type=" " class="input-2" placeholder="select one">
+    <br>
+    <input type="checkbox" name="" value="">
+    <label for="">Pay in full</label>
+    <br>
+    <input type="checkbox" name="" value="">
+    <label for="">50% deposit</label>
+    <br>
+    <input type="checkbox" name="" value="">
+    <label for="">2-3 month payment plan</label>
+    <p>ANYTHING ELSE YOU'D LIKE TO SHARE?</p>
+    <textarea id="message" rows="4" placeholder="How can I help you"></textarea>
+    <br>
+    <br>
+    <button class="input-btn">Submit</button>
+  </form>
+ </div>
+-->
+  <!--footer
+<div class="footer">
+  <div class="footer-container">
+    <div class="footer-img"><img src="./IMAGES/footer img.jpg"></div>
+    <form class="form">
+      <h3>STAY IN THE LOOP</h3>
+      <p>Join our newsletter gang and be the first to know about exclusive offers</p>
+      <label><input type="text" id="newsletterName" name="name" required></label>
+      <br>
+      <br>
+      <label><input type="email" id="newsletterEmail" name="email" required></label>
+      <br>
+      <br>
+      <button onclick="subscribeNewsletter()">Subscribe</button>
+    </form>
+
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+  </div>
+  <p>&copy;Alexandriacollective</p>
+</div>
+
+  <script src="./https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "kylakk@gmail.com",
+        Password: "D0C04DECCA43206F3FCB0FF330C58567EB56",
+        To: 'kaundaflavia937@gmail.com',
+        From: "kylakk@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+</body>
+</html>

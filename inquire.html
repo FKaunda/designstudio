@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./alex.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-bar"></div>
+    <div class="header">
+      <ul class="nav">
+        <li class="logo-h1"><a href="./alex.html">Alexandria <span class="logo-h2">Collective</span></a></li>
+        <li><a href="./about.html" >ABOUT</a></li>
+        <li><a href="./event.html" >EVENT STYLING</a></li>
+        <li><a href="./interior.html" >INTERIOR STYLING</a></li>
+  <!-- <li><a href="./contact.html" >CONTACT</a></li>-->
+        <li> <a href="./inquire.html" class="inquiry-btn">INQUIRE</a></li>
+      </ul>
+    </div>
+    <div class="line"></div>
+
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <input type="text" class="input-1" id="firstName" placeholder="First Name" required>
+     <input type="text" class="input-1" id="lastName" placeholder="Last Name" required>
+      <br>
+      <br>
+      <input type="email" class="input-1" id="email" placeholder="Email Address" required>
+      <p>WHICH SERVICE ARE YOU MOST INTERESTED IN?<br>
+        Check all that apply.</p>
+
+      <input type="checkbox" class="service-checkbox" id="homeInterior" name="services[]" value="Home interior design">
+      <label for="Brand Identity"> Home interior design</label><br>
+      <input type="checkbox" class="service-checkbox" id="officeInterior" name="services[]"
+        value="Office Interior Design">
+      <label for="officeInterior">Office and cooperate spaces interior design</label>
+      <br>
+      <input type="checkbox" class="service-checkbox" id="eventDesign" name="services[]" value="Event design">
+      <label for="eventDesign">Event design</label>
+      <br>
+      <p>WHICH PAYMENT OPTION ARE YOU FEELING MOST ALIGNED WITH? (KEEP IN MIND WE HAVE PAYMENT PLAN OPTIONS)</p>
+      <input type="text" class="input-2" placeholder="Select one">
+      <br>
+      <input type="checkbox" name="" value="">
+      <label for="">Pay in full</label>
+      <br>
+      <input type="checkbox" name="" value="">
+      <label for="">50% deposit</label>
+      <br>
+      <input type="checkbox" name="" value="">
+      <label for="">2-3 month payment plan</label>
+      <p>ANYTHING ELSE YOU'D LIKE TO SHARE?</p>
+      <textarea id="message" rows="4" placeholder="How can I help you"></textarea>
+      <br>
+      <br>
+      <button class="input-btn" onclick="validateForm()" >Submit</button>
+    </form>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-img"><img src="./IMAGES/footer img.jpg"></div>
+      <form class="form">
+        <h3>STAY IN THE LOOP</h3>
+        <p>Join our newsletter gang and be the first to know about exclusive offers</p>
+        <label><input type="text" id="newsletterName" name="name" required></label>
+        <br>
+        <br>
+        <label><input type="email" id="newsletterEmail" name="email" required></label>
+        <br>
+        <br>
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+      </form>
+
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <p>&copy;Alexandriacollective</p>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function validateForm() {
+      let firstName = document.getElementById('firstName').value;
+      let lastName = document.getElementById('lastName').value;
+      let email = document.getElementById('email').value;
+
+      // Validate form data\\
+      if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '') {
+        alert('Please fill in all required fields.');
+        return false;
+      }
+
+      // All checkboxes with the same class
+      let checkboxes = document.querySelectorAll('.service-checkbox');
+
+      // Check if at least one checkbox is checked
+      let atLeastOneChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+      // If not at least one checked
+      if (!atLeastOneChecked) {
+        alert('Please choose at least one service');
+        return false; // This prevents submission
+      }
+        alert ('Form submitted' );
+      return true; // Allow form submission
+    }
+
+    function subscribeNewsletter() {
+      let newsletterName = document.getElementById('newsletterName').value;
+      let newsletterEmail = document.getElementById('newsletterEmail').value;
+
+      // Your code to subscribe the user to the newsletter
+      // ...
+       if(newsletterName.trim()===''|| newsletterEmail.trim()===''){
+        alert('Please provide both name and email.');
+        return fasle;
+          }
+        alert('You are subscribed!');
+        
+      // Example alert
+    }
+
+    /* function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "kaundaflavia937@gmail.com",
+          Password: "trey@levy",
+          To: 'kylakk119@gmail.com',
+          From: document.getElementById("email").value,
+          Subject: "New form enquiry",
+          Body: "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }*/
+   
+  </script>
+  
+</body>
+
+</html>
+
+  
